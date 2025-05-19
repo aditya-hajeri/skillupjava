@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: helloapp-deployment
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: helloapp
+  template:
+    metadata:
+      labels:
+        app: helloapp
+    spec:
+      containers:
+      - name: helloapp
+        image: adityasinghajeri/skillupjava:latest
+        ports:
+        - containerPort: 8786
