@@ -7,6 +7,6 @@ spec:
     app: helloapp
   ports:
     - protocol: TCP
-      port: 80
+      port: 8786
       targetPort: 8786
   type: LoadBalancer

@@ -17,4 +17,4 @@ spec:
         image: adityasinghajeri/skillupjava:latest
         ports:
         - containerPort: 8786
-# jjj
+        
